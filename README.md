@@ -37,7 +37,7 @@ $actualHash = (Get-FileHash -LiteralPath ".\$apkFileName" -Algorithm SHA256).Has
     Expected = $expectedHash
     Actual = $actualHash
     Matches = ($actualHash -eq $expectedHash)
-}
+} | Format-List
 ```
 
 `Matches`が`True`であれば、APKは公開時のファイルと一致しています。`False`と表示された場合やファイルが見つからないエラーになった場合は、APKをインストールせず、同じリリースからAPKと`SHA256SUMS.txt`を再ダウンロードしてください。
