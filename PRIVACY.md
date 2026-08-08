@@ -2,11 +2,11 @@
 
 最終更新日: 2026年8月7日
 
-Flashlight Alert（以下「本アプリ」）は、ライトの点灯状態と端末の操作状態を端末上で確認し、ライトの消し忘れを通知するAndroidアプリです。
+Flashlight Alert（以下「本アプリ」）は、ライトの点灯状態と端末のスリープ状態を端末上で確認し、ライトの消し忘れを通知するAndroidアプリです。
 
 ## 収集・共有する情報
 
-本アプリは、個人情報、端末情報、利用状況、位置情報、カメラ画像その他の利用者データを収集、保存、外部送信または第三者へ共有しません。外部サーバーとの通信機能、広告、分析SDKはありません。
+本アプリは、個人情報、端末情報、利用状況、位置情報、カメラ画像その他の利用者データを収集、保存、外部送信または第三者へ共有しません。<br>外部サーバーとの通信機能、広告はありません。
 
 ## 権限の利用目的
 
@@ -18,7 +18,7 @@ Flashlight Alert（以下「本アプリ」）は、ライトの点灯状態と�
 
 ## 配布元
 
-正規の配布物は、開発者が管理する[GitHub Releases](https://github.com/nao-dev-space/flashlight-alert-releases/releases)から提供します。Google Play外からのインストールに伴うAndroidの警告内容を確認したうえで利用してください。
+正規の配布物は、開発者が管理する[GitHub Releases](https://github.com/nao-dev-space/flashlight-alert-releases/releases)から提供します。<br>Google Play外からのインストールに伴うAndroidの警告内容を確認したうえで利用してください。
 
 ## 変更
 
