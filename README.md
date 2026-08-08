@@ -28,11 +28,19 @@ Google Play外からの配布であるため、自動更新はありません。
 Windows PowerShellでは、APKと`SHA256SUMS.txt`を同じフォルダーへ保存し、次を実行します。
 
 ```powershell
-Get-FileHash .\Flashlight-Alert-vX.Y.Z.apk -Algorithm SHA256
-Get-Content .\SHA256SUMS.txt
+$checksumEntry = (Get-Content -LiteralPath '.\SHA256SUMS.txt' | Select-Object -First 1) -split '\s+', 2
+$expectedHash = $checksumEntry[0].ToLowerInvariant()
+$apkFileName = $checksumEntry[1]
+$actualHash = (Get-FileHash -LiteralPath ".\$apkFileName" -Algorithm SHA256).Hash.ToLowerInvariant()
+[pscustomobject]@{
+    File = $apkFileName
+    Expected = $expectedHash
+    Actual = $actualHash
+    Matches = ($actualHash -eq $expectedHash)
+}
 ```
 
-表示された2つのSHA-256が一致しない場合は、APKをインストールしないでください。
+`Matches`が`True`であれば、APKは公開時のファイルと一致しています。`False`と表示された場合やファイルが見つからないエラーになった場合は、APKをインストールせず、同じリリースからAPKと`SHA256SUMS.txt`を再ダウンロードしてください。
 
 正式なAPKの署名証明書SHA-256は次の値です。
 
