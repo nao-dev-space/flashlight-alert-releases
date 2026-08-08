@@ -2,6 +2,12 @@
 
 Flashlight Alertは、Androidスマートフォンのライトが点灯したまま端末が非操作になった場合に、設定時間の経過後に通知するアプリです。
 
+## スクリーンショット
+
+<p align="center">
+  <img src="assets/screenshots/flashlight-alert-main-ja.png" alt="Flashlight Alertの日本語メイン画面" width="360">
+</p>
+
 ## ダウンロード
 
 最新の署名済みAPKは [Releases](https://github.com/nao-dev-space/flashlight-alert-releases/releases) からダウンロードしてください。
