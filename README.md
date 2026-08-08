@@ -25,6 +25,10 @@ Google Play外からの配布であるため、自動更新はありません。
 
 ## 正規性の確認
 
+### APKファイル全体のSHA-256
+
+次のPowerShellコマンドは、ダウンロードしたAPKファイル全体のSHA-256を計算し、`SHA256SUMS.txt`に記載された値と比較します。この値はAPKの内容が変わるたびに変化します。
+
 Windows PowerShellでは、APKと`SHA256SUMS.txt`を同じフォルダーへ保存し、次を実行します。
 
 ```powershell
@@ -41,6 +45,10 @@ $actualHash = (Get-FileHash -LiteralPath ".\$apkFileName" -Algorithm SHA256).Has
 ```
 
 `Matches`が`True`であれば、APKは公開時のファイルと一致しています。`False`と表示された場合やファイルが見つからないエラーになった場合は、APKをインストールせず、同じリリースからAPKと`SHA256SUMS.txt`を再ダウンロードしてください。
+
+### 署名証明書のSHA-256
+
+次の値はAPKファイル全体ではなく、APKへ署名した開発者の証明書に対するSHA-256です。PowerShellで表示される`Expected`および`Actual`とは計算対象が異なるため、値が異なるのが正常です。同じ署名鍵を使用している限り、APKを更新してもこの値は変わりません。
 
 正式なAPKの署名証明書SHA-256は次の値です。
 
