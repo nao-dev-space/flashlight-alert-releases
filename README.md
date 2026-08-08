@@ -4,7 +4,7 @@ Flashlight Alertは、Androidスマートフォンのライトが点灯したま
 
 ## ダウンロード
 
-最新の署名済みAPKは[Releases](https://github.com/nao-dev-space/flashlight-alert-releases/releases)からダウンロードしてください。
+最新の署名済みAPKは [Releases](https://github.com/nao-dev-space/flashlight-alert-releases/releases) からダウンロードしてください。
 
 各リリースでは、次の2ファイルを配布します。
 
@@ -15,7 +15,7 @@ GitHubが自動表示する「Source code」は、この配布リポジトリの
 
 ## インストール
 
-1. ReleasesからAPKをAndroid端末へダウンロードします。
+1. [Releases](https://github.com/nao-dev-space/flashlight-alert-releases/releases) からAPKをAndroid端末へダウンロードします。
 2. Androidの案内に従い、ダウンロードに使用したブラウザーまたはファイル管理アプリについて「不明なアプリのインストール」を許可します。
 3. APKを開いてインストールします。
 4. インストール後、「不明なアプリのインストール」の許可を無効に戻すことを推奨します。
